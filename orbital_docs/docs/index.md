@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to Docs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -14,4 +14,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
+        overview.md # Project overview landing page.
+        sprint_review_1 # Houses each teams progress from the sprint.
+
         ...       # Other markdown pages, images and other files.
+
+## Other info

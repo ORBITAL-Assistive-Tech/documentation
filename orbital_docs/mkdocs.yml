@@ -1,7 +1,15 @@
-site_name: My site
+site_name: ORBITAL Documentation
 site_url: https://mydomain.org/mysite
+nav:
+- Welcome to Docs: index.md
+- Project Overview: overview.md
+- Sprint Review 1: /sprint_review_1/mech.md
+
 theme:
   name: material
+  palette:
+    primary: blue
+
   features:
   - navigation.instant
   - navigation.tracking
@@ -11,3 +19,7 @@ theme:
   - navigation.prune
   - navigation.indexes
   - navigation.top
+  - search.suggest
+  plugins:
+  - search
+
