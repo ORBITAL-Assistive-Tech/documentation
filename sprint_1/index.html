@@ -1,0 +1,1645 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/mysite/sprint_1/">
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../sprint_2/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>Sprint 1 - ORBITAL Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sprint-review-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ORBITAL Documentation" class="md-header__button md-logo" aria-label="ORBITAL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ORBITAL Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sprint 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome to Docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview/" class="md-tabs__link">
+        
+  
+    
+  
+  Project Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Sprint Reviews
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ORBITAL Documentation" class="md-nav__button md-logo" aria-label="ORBITAL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ORBITAL Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sprint Reviews
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sprint Reviews
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 1
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-factor-mechanical-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Form Factor - Mechanical Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Factor - Mechanical Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-actuation-exploration-mechanical-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Actuation Exploration - Mechanical Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cam Actuation Exploration - Mechanical Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget-spent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Spent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-circuit-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware &amp; Circuit Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware & Circuit Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget-spent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Spent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-embedded-systems-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software &amp; Embedded Systems Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software & Embedded Systems Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-to-braille-conversion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text to Braille Conversion (controller)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data (model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-ui-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend-UI (view)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sprint_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#form-factor-mechanical-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Form Factor - Mechanical Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Form Factor - Mechanical Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cam-actuation-exploration-mechanical-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cam Actuation Exploration - Mechanical Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cam Actuation Exploration - Mechanical Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget-spent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Spent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-circuit-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware &amp; Circuit Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Firmware & Circuit Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget-spent_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget Spent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-embedded-systems-team" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software &amp; Embedded Systems Team
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software & Embedded Systems Team">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-goals_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#achieved_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-to-braille-conversion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text to Braille Conversion (controller)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data (model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-ui-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend-UI (view)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-documents_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sprint-review-1">Sprint Review 1</h1>
+<p>Sprint date: 02/02/2025 - 02/22/2025</p>
+<h2 id="form-factor-mechanical-team">Form Factor - Mechanical Team</h2>
+<p><strong>Contributors:</strong> Camille Kawabata '27</p>
+<h3 id="sprint-goals">Sprint Goals</h3>
+<ol>
+<li>Gain a better understanding of existing braille e readers with refreshable displays and find patterns that will be useful to implement in case design.</li>
+<li>Begin developing spatial understanding of braille cells and the array arrangement sizing.</li>
+<li>Produce a physical MVP that does not contain braille cells.</li>
+</ol>
+<h3 id="achieved">Achieved</h3>
+<ul>
+<li>Found patterns in the ergonomic design for existing braille E-readers.</li>
+<li>Used SOLIDWORKS to model braille cell sizing and (poorly) 3D printed a physical representation</li>
+<li>Laser cut a potential top board for the case.</li>
+<li>Completed a CAD model of the tablet-esk version of the e-reader.</li>
+</ul>
+<h3 id="process">Process</h3>
+<p>I started my design by looking at existing models. I reasoned that it made no sense to remake the wheel when there were clear instructions of what could be done. This gave me a really jumping off point to begin designing off of. Key features that I noticed were rounded corners and edges, sleek top designs, and many included items such as an attachable lanyard. Based on these features, I began sketching what a model could look like. Initially I was thinking something a bit clunkier than my final as I didn’t (and still don’t) really know how large the actuation components would be nor how much space our electrical system would be. From speaking to Toby, I was given the guidance that skinnier is better, as we would like this to be an easily transportable device. Something that could easily be slipped into a backpack. From here, I slimmed down the design, but left the main components the same. </p>
+<p>I designed off the plan of using a 12 by 40 cell array. This informed the sizing of the unit. I alo planned for the case to be at least two parts. I felt that having a top and bottom component that could be separated would be optimal for repairs and cleanings. Ideally, I would like for this to be something that clicks into place rather than using screws, but this might be the better route to take when thinking of durability.</p>
+<p>A challenge I ran into when designing this/creating an MVP was material usage. For the curved and sleek design I was going for, using cardboard or hardboard wasn’t necessarily going to be my best bet, but I also didn’t want to use the 3D printers to create something that was likely not going to be used beyond the design review. Also the size of the case exceeds the max capacity of most of the tools I know how to use, but this made me think about how we can make portions of this in a modular way. This is why I really only cut the top board as a visual representation for the team to recognize how limited our space will be working at a standard braille sizing.</p>
+<p>Going into the next sprint, I do still have some questions I would like to look into</p>
+<ul>
+<li>What would be our ideal way to manufacture our case?</li>
+<li>When someone is using our e-reader how are we expecting them to use it? In their lap or on a table?</li>
+<li>What kinds of buttons and ports do we think we’ll be using? How can we arrange them in a logical way to make the e-reader more intuitive?</li>
+<li>Are there ways I can design the case to help orient the user?</li>
+<li>Are there ideal weight guidelines to be within for a handheld device such as this?</li>
+</ul>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li>I enjoyed the autonomy I felt that I had while working on this project. I think being on a team of my own makes it so I can’t really hide behind my teammates and push off work. If I don’t get it done, it's not getting done and I think this helps me actually do the work for a project team, unlike my previous experiences.</li>
+</ul>
+<h3 id="related-documents">Related Documents</h3>
+<p><center><img alt="Photo" src="../imgs/sprint1/me7.png" /><img alt="Photo" src="../imgs/sprint1/me8.png" /></center></p>
+<p><center><img alt="Photo" src="../imgs/sprint1/me9.png" /></center></p>
+<p><center><img alt="Photo" src="../imgs/sprint1/me10.png" /></center></p>
+<p><center><img alt="Photo" src="../imgs/sprint1/me11.png" /><img alt="Photo" src="../imgs/sprint1/me12.png" /></center></p>
+<p><center><img alt="Photo" src="../imgs/sprint1/me13.png" /></center></p>
+<p><center><img alt="Photo" src="../imgs/sprint1/me14.png" /><img alt="Photo" src="../imgs/sprint1/me15.png" /></center></p>
+<h2 id="cam-actuation-exploration-mechanical-team">Cam Actuation Exploration - Mechanical Team</h2>
+<p><strong>Contributors:</strong> Sascha Jalinous ‘28, Anna Brown 28’, Sammy '28, and Maya '27</p>
+<h3 id="sprint-goals_1">Sprint Goals</h3>
+<ol>
+<li>Explore feasibility of simple electromagnet actuator mechanism </li>
+<li>Create low-tech theoretical prototype</li>
+<li>Explore feasibility of existing cam mechanism </li>
+<li>Prusa 3D print large scale cam mechanism </li>
+<li>Explore cam tolerancing</li>
+<li>Prusa and Resin print toleranced prototype </li>
+</ol>
+<h3 id="achieved_1">Achieved</h3>
+<ul>
+<li>One large hand size 3D printed model printed on Prusa 3D printer</li>
+<li>Two small scale 3D printed models → first one was printed on a prusa, second was printed on a resin printer</li>
+</ul>
+<h3 id="process_1">Process</h3>
+<ul>
+<li>Original 3D model and tutorial was made by Vijay on hackaday.io (blog linked below)</li>
+<li>Sascha Jalinous ‘28 and Anna Brown 28’ partner CADed the file into a printable format</li>
+<li>Sascha Jalinous ‘28 and Anna Brown 28’ printed it at hand scale on the Prusa and processed it and assembled it </li>
+<li>Sascha Jalinous ‘28 and Anna Brown 28’ presented the design at sprint review on 2/18/25</li>
+<li>Quinn Veriil ‘27 helped us come up with ideas for what to do after the hand-scale 3D model </li>
+<li>Sascha Jalinous ‘28 and Anna Brown 28’ co-CADed the tolerances of the cam pins</li>
+<li>Sascha Jalinous ‘28 and Anna Brown 28’ printed it at small scale on the Prusa then processed and assembled it </li>
+<li>Quinn Verrill ‘27 resin printed and cured our small prototype</li>
+<li>Realized after small scale 3D print: Prusa is not the way <ul>
+<li>Supports consistently damaged the main parts </li>
+<li>Model was too fragile and easy to break whereas the resin was more flexible and less prone to breaking</li>
+<li>The plastic was easily deformed when we tried to put the cams into the holes </li>
+<li>The holes printed wonky</li>
+<li>Tiny strings of plastic really got in the way of assembly </li>
+<li>Pins of cams were very fragile and some broke off with supports</li>
+</ul>
+</li>
+<li>After this we assembled the print Quinn Verrill ‘27 made in the resin printer </li>
+</ul>
+<h3 id="budget-spent">Budget Spent</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Link</th>
+<th>Cost per item</th>
+<th>Quantity bought</th>
+<th>Total Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Black PLA</td>
+<td>NA 3D printer</td>
+<td>NA</td>
+<td>2 prints</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Resin</td>
+<td>NA Resin printer</td>
+<td>NA</td>
+<td>1 print</td>
+<td>$0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-takeaways_1">Key Takeaways</h3>
+<ul>
+<li>Proof of concept<ul>
+<li>This design has been done before </li>
+</ul>
+</li>
+<li>Learned that cam mechanism is doable → difficult, but doable </li>
+<li>Resin printing is the only way this is going to work → can not be done on prusa printers <ul>
+<li>Difficult to assemble </li>
+<li>Lots of small parts</li>
+<li>Magnets inside the cams have to be very tiny and may need glue</li>
+<li>Cams have to be put in the correct orientation or else they won’t close properly → it’s difficult to tell which way they go in, so extra time needs to be taken to ensure they’re correct </li>
+</ul>
+</li>
+<li>Cams do not need continuous current to keep the pins up → they only need the electromagnets to turn on and off </li>
+<li>We have not tested whether the electromagnets are strong enough to actually move the cams up and down </li>
+<li>Tolerancing and friction is still something that we are working on <ul>
+<li>On our small scale, we found that 0.02in cam pins worked best with the size of our print → the exact size of the pin really depends on the size of the model as a whole so that’s why tolerancing is still something we’re working on </li>
+</ul>
+</li>
+</ul>
+<h3 id="related-documents_1">Related Documents</h3>
+<ul>
+<li>
+<p><a href="https://hackaday.io/project/191181-electromechanical-refreshable-braille-module">Vijay Blog and Model: </a> https://hackaday.io/project/191181-electromechanical-refreshable-braille-module</p>
+</li>
+<li></li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/me1.png" /></center></p>
+<p><center><em>Figure 1: The Big One</em></center></p>
+<ul>
+<li>
+<p><center><img alt="Photo" src="../imgs/sprint1/me2.png" /></center></p>
+</li>
+<li></li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/me3.png" /><img alt="Photo" src="../imgs/sprint1/me4.png" /></center></p>
+<ul>
+<li></li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/me5.png" /></center></p>
+<ul>
+<li></li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/me6.png" /></center></p>
+<h2 id="firmware-circuit-team">Firmware &amp; Circuit Team</h2>
+<p><strong>Contributors:</strong> Toby Mallon ‘27, Laurel Cox ‘27, Antara Mazumdar ‘28, Eleane Lin ‘28, Liam Fries ‘28, and Emily Boyd ‘28</p>
+<h3 id="sprint-goals_2">Sprint Goals</h3>
+<ol>
+<li>
+<p>Determine how to send data to braille cells</p>
+<p>a. Research several methods</p>
+</li>
+<li>
+<p>Prototype data-sending system</p>
+</li>
+<li>Identify design requirements</li>
+</ol>
+<h3 id="achieved_2">Achieved</h3>
+<ul>
+<li>Determined method of data sending<ul>
+<li>shift registers</li>
+</ul>
+</li>
+<li>
+<p>Identified design requirements</p>
+<p>a. Does not need to be fast </p>
+<ul>
+<li>~ 1 kbps</li>
+</ul>
+<p>b. Scalable</p>
+<ul>
+<li>Should be easy to add extra registers/cells</li>
+<li>Adding cells should not substantially change the amount of time needed to refresh</li>
+<li>Should function with a clock signal in kHz area of magnitude </li>
+</ul>
+<p>c. Light and compact battery</p>
+<ul>
+<li>Usable while charging</li>
+<li>Current e-readers can reach up to 10-20 hours on a single charge</li>
+</ul>
+<p>d. Data:</p>
+<ul>
+<li>Send either 6 or 8 bits of data to several different reception points </li>
+<li>Ability to assign 6-bit strings to different points using registers</li>
+</ul>
+</li>
+<li>
+<p>Identified more design questions</p>
+<ul>
+<li>Individual circuit board or one big one?</li>
+<li>Buttons? Page turning (forward, backward, select)</li>
+<li>How do you choose a book on it? + menu</li>
+<li>Differences in microcontrollers/microprocessors </li>
+<li>How to upload?</li>
+<li>How much storage?</li>
+</ul>
+</li>
+</ul>
+<h3 id="process_2">Process</h3>
+<h4 id="data-communication">Data Communication</h4>
+<p>This sprint we started off with a bunch of data communication research to orchestrate communication from the microprocessor to our braille cells and actuators. We approached this by splitting up who researched what and then having a shareout to narrow down our decisions. </p>
+<p><strong>I2C - Toby</strong></p>
+<p>Not chosen due to having to address 360-480 different cells
+- Allows up to 128 different devices on the same wire
+- Cells need to be able to know what their address is
+- Each cell needs to have an individual address
+- Can use multiplexing to have separate I2C busses for say each line of cells
+- Multiplexing allows us to have 128 x multiplexer different addresses
+- Slow for high data transfer rates but we don't care</p>
+<p><center><img alt="Photo" src="../imgs/sprint1/ee1.png" /></center></p>
+<ul>
+<li>Would need chips for each cell but only two wires for an entire row</li>
+<li>Range of only a few meters</li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/ee2.png" /></center></p>
+<ul>
+<li>We could very easily build our own multiplexer</li>
+<li>Comes down to just making sure we have our addresses set correctly</li>
+</ul>
+<p><strong>SPI - Laurel</strong></p>
+<p>Not chosen due to complication, though a daisy chain configuration would’ve worked</p>
+<ul>
+<li>Interface</li>
+<li>clock signal (faster processing)</li>
+<li>MOSI - parent to child</li>
+<li>MISO - child to parent<ul>
+<li>Full duplex - meaning can receive and send data simultaneously</li>
+</ul>
+</li>
+<li>SS - chip select<ul>
+<li>allows us to send signals to specific children<ul>
+<li>versus I2C requires addresses (might not be an issue, but SPI has that built-in functionality)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/ee3.png" /></center></p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>full duplex - meaning can receive and send data simultaneously</td>
+<td>requires lots of GPIO pins (but there are workarounds)</td>
+</tr>
+<tr>
+<td>faster than UART &amp; I2C</td>
+<td>Lots of variants when it comes to data modes (but is that really a con?)</td>
+</tr>
+<tr>
+<td>ubiquitous (extremely common and interfaces with pretty much everything)</td>
+<td>short distance (&lt; 1 meter, so not relevant for our project)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Serial RS485 - Eleane</strong></p>
+<p>Not chosen due to the small device limit (not enough for all the braille cells)</p>
+<ul>
+<li>Long cabling lengths (not needed for our purposes)</li>
+<li>Can use in electrically noisy environments (not needed for our purposes)</li>
+<li>High speed (not needed for our purposes)</li>
+<li>Allows multiple devices on the same bus - good for data splitting<ul>
+<li>But the device limit is only 32</li>
+</ul>
+</li>
+<li>Used in most applications requiring a serial interface (which sends data one by one in a stream of bits sequentially): robotics, motor drives, video surveillance – so mostly for communication between multiple devices or systems</li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/ee4.png" /></center></p>
+<p><strong>Parallel bus - Emily</strong></p>
+<p>Not chosen due to the sheer number of wires used.</p>
+<ul>
+<li>Super fast</li>
+<li>Would need a separate wire for each cell at least</li>
+<li>Sometimes takes up more space</li>
+<li>The length of cables might create crosstalk or interference</li>
+</ul>
+<p><center><img alt="Photo" src="../imgs/sprint1/ee5.png" /></center></p>
+<p>After talking to James Jaegelski ‘25, he dissuaded the use of any of the data sharing strategies we research because it was over complicated. Instead, he pointed to a simpler method similar to that used by LED display panels. So, we chose to use daisy-chained registers for data sharing:</p>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple</td>
+<td>Relatively slow</td>
+</tr>
+<tr>
+<td>Cheap</td>
+<td>Possible data loss</td>
+</tr>
+<tr>
+<td>Easy to scale up</td>
+<td>Requires more dedicated space for each cell</td>
+</tr>
+</tbody>
+</table>
+<h4 id="challenges">Challenges</h4>
+<ul>
+<li>Sizing of system</li>
+<li>Much of what we researched was either not feasible or over-complicated for the amount of information we needed to send</li>
+<li>Toby bought the wrong components for prototyping</li>
+</ul>
+<h3 id="budget-spent_1">Budget Spent</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Link</th>
+<th>Cost per item</th>
+<th>Quantity bought</th>
+<th>Total Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SN74HC595DR IC 8BIT SHIFT REG 3ST-OUT 16SOIC</td>
+<td>https://www.digikey.com/en/products/detail/texas-instruments/SN74HC595DR/562919</td>
+<td>$0.16</td>
+<td>25</td>
+<td>$4.00</td>
+</tr>
+<tr>
+<td>CY74FCT2574CTSOC IC FF D-TYPE SNGL 8BIT 20SOIC</td>
+<td>https://www.digikey.com/en/products/detail/texas-instruments/CY74FCT2574CTSOC/1508664</td>
+<td>$0.474</td>
+<td>25</td>
+<td>$11.85</td>
+</tr>
+<tr>
+<td>SN74HC74DR IC FF D-TYPE DUAL 1BIT 14SOIC</td>
+<td>https://www.digikey.com/en/products/detail/texas-instruments/SN74HC74DR/276847</td>
+<td>$0.11760</td>
+<td>25</td>
+<td>$2.94</td>
+</tr>
+<tr>
+<td>Shipping + Tax</td>
+<td></td>
+<td>$8.16</td>
+<td></td>
+<td>$8.16</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>Total</td>
+<td>$26.95</td>
+</tr>
+</tbody>
+</table>
+<h3 id="key-takeaways_2">Key Takeaways</h3>
+<ul>
+<li>We can use register daisy chaining to move small amounts of data at relatively fast speeds</li>
+</ul>
+<h3 id="related-documents_2">Related Documents</h3>
+<ul>
+<li><a href="https://docs.google.com/document/d/1j-H7OtH54iyJWe-_MvwCMz1viSeq28TTGDy--KWKJwc/edit?tab=t.0#heading=h.25vkbto01t5t">Research Doc</a></li>
+<li><a href="https://docs.google.com/presentation/d/1-fGk_BuW0JNuEvrhWyrgf0beI8Ya8F1Y5C0MksfteVc/edit#slide=id.p">Sprint 1 Review Slideshow</a></li>
+</ul>
+<h2 id="software-embedded-systems-team">Software &amp; Embedded Systems Team</h2>
+<p><strong>Contributors:</strong> Bill, Anna, Yunzhu, Evi, Pepper, Titi</p>
+<h3 id="sprint-goals_3">Sprint Goals</h3>
+<ol>
+<li>Select and build a solid code architecture</li>
+<li>Convert text/pdf files to braille format </li>
+<li>Digital model of User Interface for software testing</li>
+</ol>
+<h3 id="achieved_3">Achieved</h3>
+<ul>
+<li>Developed a basic front-end UI for testing the controller functions </li>
+<li>Created basic functions for the controller (forward and backward, access main menu and submenus)</li>
+<li>Implemented a conversion system to convert text files to braille</li>
+<li>Developed a model to store converted files with both original text and braille text</li>
+</ul>
+<h3 id="process_3">Process</h3>
+<h4 id="software-architecture">Software Architecture</h4>
+<p>The first step of the sprint is to select a software architecture. The three criterias to select our architecture are (1) modularity, (2) ease-of-testing, and (3) light-weight. The first criteria arose due to the fact that for the first two sprints, we will be developing software without a physical user-interface. Therefore, we have to make code that isn’t rigidly connected to the architecture, allowing us to move it to another ecosystem when the hardware components are ready to be integrated. For the second criteria, without a physical user-interface, we decided to proceed with a digital twin of the expected final physical user-interface. This allows us to test how our functions will interact with the actual device. The limitation is that it will always be a digital imitation. We won’t be able to intuitively understand how the physical product would function. But it is the best imitation we can make without a physical user-interface. For backend-heavy functions, we will create unit tests to examine a breadth of possible scenarios. As for the last criteria, the software will probably be running on a microcomputer with 1 to 2 GB of RAM. Furthermore, we will not have lots of storage space– up to about 8 GB (which is more than enough). Thus, the architecture must not be too complex and involve too many layers. With the criterias in mind, we selected the Model-View-Controller (MVC) architecture. </p>
+<p>In terms of modularity, this architecture allows us to split our code into three different parts that do not heavily rely on each other. The Model portion is where we will define the structure of the data that we will be using. The Controller portion is where the “thinking” happens. It includes functions that will manipulate the data stored in the model, interact with the View, and connect the data from the Model to the View. The View portion is strictly the user-interface. In the next two sprints, our View will be digital. However, as we move into the integration phase with other subteams, the View will change into the physical product. The MVC allows us to focus on developing the essential code that we need in the Model and Controller, and have as little of what we need in the View. We can simply then replace the digital version of the View with the physical version of the View, while keeping all our progress in the Model and Controller. </p>
+<p>With regards to testing, the MVC architecture allows us to test two different types of Controller functions: the backend functions and the frontend functions. The backend functions are those that will strictly work in the background, for eg. converting a text file into braille format. Since all of these functions will be in the Controller portion, we can easily organize and create unit tests for them. The frontend functions are those that interact with the View. Our plan is to create functions in the View that are universal to both the digital and physical versions, for eg. nextPage(). In the digital version, this could manifest as a button that says next. In the physical version, this could be a button with braille dots on them. Either way, when the function is called, it will call a Controller function. We can then see if the Controller is doing what it’s supposed to do, such as going to the next page of text/braille. The limitation to this method is that it would be painstaking to test all scenarios and not as efficient as unit testing, leading to possible bugs. To compensate, we will try to test as many things using unit tests as possible.</p>
+<h4 id="workflow">Workflow</h4>
+<p>For this sprint, we will be working in two smaller teams: frontend and backend. The frontend team is in charge of developing the digital user-interface. The backend team is in charge of developing functions in the Controller that take in .txt files and turn them into braille format. As the backend team develops their functions, they will also shape the Model in whatever ways they deem fit.</p>
+<p>All of our code is on the software repository of the ORBITAL-Assistive-Tech Github organization. The repository has three branches: main, test_ui, and upload. The main branch includes the most up-to-date code that is reflective of the whole sub team's current progress. For this sprint, the main branch includes code that will start up a digital user-interface with buttons that the user can interact with. Buttons are mapped to functions in the Controller that interacts with the Model. The other two branches are for developing new features. The frontend team works on the test_ui branch. This branch includes the most up-to-date version of the digital user-interface. The backend team works on the upload branch. This branch includes the most up-to-date version of the Controller and Model.</p>
+<p>When one of the teams feel like their work is complete, they can submit a pull request in which the sub team lead can accept/reject. The sub team lead is in charge of resolving conflicts in the main branch and making sure that everything integrates properly.</p>
+<h4 id="text-to-braille-conversion-controller">Text to Braille Conversion (controller)</h4>
+<p>Evi, Pepper, and Titi worked on developing the back end systems. We implemented the pybrl library into the project, allowing us to take text strings and convert them into Grade 2 Braille. We built on this by making a system to take input from a txt file, translate it, and store it locally within a dictionary for quick retrieval.</p>
+<p><center><img alt="Photo" src="../imgs/sprint1/swe1.png" /></center></p>
+<h4 id="storing-data-model">Storing Data (model)</h4>
+<p>The Model was continuously built on throughout the sprint to accommodate the needs of the frontend and backend teams. We did not initially settle on a fixed design for the Model as we believed that there will be new information that’ll have to be stored as the project proceeds. However, we did decide on an overall guiding structure.</p>
+<p>To represent the braille e-reader itself, we created a class named Reader which stores all information concerning the operation of the device, such as its battery percentage, current selected document, etc. The Reader class also has a variable named “documents” which is a list containing all of the books, documents, and articles that have been uploaded to the device.</p>
+<p>To represent each of these books, documents, and articles, we created a class named BrailleFile. The class contains the text of the document, the text’s braille equivalent, the file path of the original file to the program, and a unique ID which is used to select/identify the file. Whenever a file is uploaded, the Controller will parse it and store the parsed information into an instance of the BrailleFile class. The instance is then stored in the Reader’s “documents” variable.</p>
+<p>As the project goes on, we aim to add more variables to these classes as we incorporate new features into the device. Possible ideas we are looking into are ways to represent chapters and book sections in the BrailleFile class, and storing the most recent location the reader was at – so they don’t have to start all over from the beginning of the document. The Reader class could store certain information on preferred settings or some kind of history that the user might find helpful. We hope to keep the model fluid so we can continuously add new features as we rapidly prototype our software.</p>
+<h4 id="frontend-ui-view">Frontend-UI (view)</h4>
+<p>Yunzhu and Anna worked on developing the front-end UI. We displayed the braille codes based on the data in the .json file, and created a series of basic but functioning buttons in the controller. We created forward and backward buttons to traverse through the data, and also different subwindows to allow the user to move through the book that is currently being read, and the main menu where they can select other texts they want to read. </p>
+<p><center><img alt="Photo" src="../imgs/sprint1/swe2.png" /></center></p>
+<h3 id="key-takeaways_3">Key Takeaways</h3>
+<ol>
+<li>Unified English Braille</li>
+<li>Prevalence of Braille Ready Format (BRF) Files</li>
+<li>Lack of well-maintained open source Python software </li>
+<li>Unreliable nature of PDF/EPUB conversions</li>
+</ol>
+<h3 id="related-documents_3">Related Documents</h3>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1KTW-AqIl8hE7oDpX8LTnE_BcdtSr3teZhLTUPoKvzwk/edit#slide=id.g2d926e0b8df_0_0">Sprint Review Slideshow</a></li>
+<li><a href="https://github.com/ORBITAL-Assistive-Tech/software">Github</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
