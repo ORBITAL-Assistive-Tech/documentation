@@ -3,7 +3,13 @@ site_url: https://mydomain.org/mysite
 nav:
 - Welcome to Docs: index.md
 - Project Overview: overview.md
-- Sprint Review 1: /sprint_review_1/mech.md
+- Sprint Reviews:
+  - Sprint 1: sprint_1.md
+  - Sprint 2: sprint_2.md
+
+docs_dir: docs
+extra_css:
+  - style.css
 
 theme:
   name: material
@@ -15,6 +21,7 @@ theme:
   - navigation.tracking
   - navigation.tabs
   - navigation.tabs.sticky
+  - navigation.sections
   - navigation.path
   - navigation.prune
   - navigation.indexes
@@ -22,4 +29,9 @@ theme:
   - search.suggest
   plugins:
   - search
+  markdown_extensions:
+  - toc:
+      permalink: true
+      title: On this page
+      toc_depth: 4
 
