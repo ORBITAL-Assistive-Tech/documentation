@@ -7,7 +7,7 @@ nav:
   - Sprint 1: sprint_1.md
   - Sprint 2: sprint_2.md
 
-docs_dir: docs
+docs_dir: docs/
 extra_css:
   - style.css
 
