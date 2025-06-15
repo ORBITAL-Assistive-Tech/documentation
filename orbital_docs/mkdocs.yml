@@ -1,11 +1,11 @@
 site_name: ORBITAL Documentation
 site_url: https://mydomain.org/mysite
 nav:
-- Welcome to Docs: index.md
-- Project Overview: overview.md
+- Welcome to Docs: docs/index.md
+- Project Overview: docs/overview.md
 - Sprint Reviews:
-  - Sprint 1: sprint_1.md
-  - Sprint 2: sprint_2.md
+  - Sprint 1: docs/sprint_1.md
+  - Sprint 2: docs/sprint_2.md
 
 docs_dir: docs
 extra_css:
