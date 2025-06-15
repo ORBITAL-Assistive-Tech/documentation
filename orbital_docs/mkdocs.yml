@@ -1,5 +1,5 @@
 site_name: ORBITAL Documentation
-site_url: https://mydomain.org/mysite
+site_url: https://orbital-assistive-tech.github.io/documentation/
 nav:
 - Welcome to Docs: index.md
 - Project Overview: overview.md
