@@ -1,13 +1,14 @@
 site_name: ORBITAL Documentation
 site_url: https://orbital-assistive-tech.github.io/documentation/
 nav:
-- Welcome to Docs: index.md
+- Welcome to ORBITAL Docs: index.md
 - Project Overview: overview.md
-- Sprint Reviews:
-  - Sprint 1: sprint_1.md
-  ## Sections
-  - (Form-Factor - Mechanical Team) sprint_1_teams/form_factor.md
-  - Sprint 2: sprint_2.md
+- Sprint 1 - Spring '25:
+  - Form-Factor - Mechanical Team: sprint_1_teams/form_factor.md
+  - Cam Actuation Exploration - Mechanical Team: sprint_1_teams/cam_actuation.md
+  - Firmware & Circuit Team: sprint_1_teams/firmware_circuit.md
+  - Software & Embedded Systems Team: sprint_1_teams/software.md
+
 
 docs_dir: docs/
 extra_css:
