@@ -1,22 +1,18 @@
-# Welcome to Docs
+# Welcome to ORBITAL Docs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This site houses all of ORBITAL's project documentation. 
 
-## Commands
+## About ORBITAL
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+ORBITAL is stands for Olin Research for Biomedical Innovation and Technology Advancement Lab and is dedicated to advancing the frontiers of assistive technology and medical device innovation. Our mission is to research, ideate, and design affordable cutting-edge technologies that seamlessly integrate with the human body, improving quality of life and empowering individuals by enhancing how they interact with the world.
 
-## Project layout
+## Navigating Docs
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        overview.md # Project overview landing page.
-        sprint_review_1 # Houses each teams progress from the sprint.
+ORBITAL works in a sub-team structure, including...
 
-        ...       # Other markdown pages, images and other files.
+* Electromechanical Actuation
+* Firmware and Circuit Design
+* Software and Embedded Systems
+* User Experience Design
 
-## Other info
+So, documentation is split up by _Sprint > Sub Team_. The site can be search by keywords using the search bar in the top right corner.

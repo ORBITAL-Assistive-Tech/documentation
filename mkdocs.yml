@@ -5,6 +5,8 @@ nav:
 - Project Overview: overview.md
 - Sprint Reviews:
   - Sprint 1: sprint_1.md
+  ## Sections
+  - (Form-Factor - Mechanical Team) sprint_1_teams/form_factor.md
   - Sprint 2: sprint_2.md
 
 docs_dir: docs/
@@ -21,6 +23,7 @@ theme:
   - navigation.tracking
   - navigation.tabs
   - navigation.tabs.sticky
+  - navigation.expand # Automatically expand the current section
   - navigation.sections
   - navigation.path
   - navigation.prune
