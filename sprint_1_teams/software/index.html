@@ -1,0 +1,840 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://orbital-assistive-tech.github.io/documentation/sprint_1_teams/software/">
+      
+      
+        <link rel="prev" href="../firmware_circuit/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>Software & Embedded Systems Team - ORBITAL Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sprint-goals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ORBITAL Documentation" class="md-header__button md-logo" aria-label="ORBITAL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ORBITAL Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software & Embedded Systems Team
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome to ORBITAL Docs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../overview/" class="md-tabs__link">
+        
+  
+    
+  
+  Project Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../form_factor/" class="md-tabs__link">
+          
+  
+    
+  
+  Sprint 1 - Spring '25
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ORBITAL Documentation" class="md-nav__button md-logo" aria-label="ORBITAL Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    ORBITAL Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to ORBITAL Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sprint 1 - Spring '25
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Sprint 1 - Spring '25
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../form_factor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Form-Factor - Mechanical Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cam_actuation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cam Actuation Exploration - Mechanical Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firmware_circuit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Firmware & Circuit Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Software & Embedded Systems Team
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Software & Embedded Systems Team
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sprint-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achieved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-to-braille-conversion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text to Braille Conversion (controller)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data (model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-ui-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend-UI (view)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sprint-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint Goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#achieved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Achieved
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Architecture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-to-braille-conversion-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text to Braille Conversion (controller)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Storing Data (model)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frontend-ui-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontend-UI (view)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Software & Embedded Systems Team</h1>
+
+<p><strong>Contributors:</strong> Bill, Anna, Yunzhu, Evi, Pepper, Titi</p>
+<h3 id="sprint-goals">Sprint Goals</h3>
+<ol>
+<li>Select and build a solid code architecture</li>
+<li>Convert text/pdf files to braille format </li>
+<li>Digital model of User Interface for software testing</li>
+</ol>
+<h3 id="achieved">Achieved</h3>
+<ul>
+<li>Developed a basic front-end UI for testing the controller functions </li>
+<li>Created basic functions for the controller (forward and backward, access main menu and submenus)</li>
+<li>Implemented a conversion system to convert text files to braille</li>
+<li>Developed a model to store converted files with both original text and braille text</li>
+</ul>
+<h3 id="process">Process</h3>
+<h4 id="software-architecture">Software Architecture</h4>
+<p>The first step of the sprint is to select a software architecture. The three criterias to select our architecture are (1) modularity, (2) ease-of-testing, and (3) light-weight. The first criteria arose due to the fact that for the first two sprints, we will be developing software without a physical user-interface. Therefore, we have to make code that isn’t rigidly connected to the architecture, allowing us to move it to another ecosystem when the hardware components are ready to be integrated. For the second criteria, without a physical user-interface, we decided to proceed with a digital twin of the expected final physical user-interface. This allows us to test how our functions will interact with the actual device. The limitation is that it will always be a digital imitation. We won’t be able to intuitively understand how the physical product would function. But it is the best imitation we can make without a physical user-interface. For backend-heavy functions, we will create unit tests to examine a breadth of possible scenarios. As for the last criteria, the software will probably be running on a microcomputer with 1 to 2 GB of RAM. Furthermore, we will not have lots of storage space– up to about 8 GB (which is more than enough). Thus, the architecture must not be too complex and involve too many layers. With the criterias in mind, we selected the Model-View-Controller (MVC) architecture. </p>
+<p>In terms of modularity, this architecture allows us to split our code into three different parts that do not heavily rely on each other. The Model portion is where we will define the structure of the data that we will be using. The Controller portion is where the “thinking” happens. It includes functions that will manipulate the data stored in the model, interact with the View, and connect the data from the Model to the View. The View portion is strictly the user-interface. In the next two sprints, our View will be digital. However, as we move into the integration phase with other subteams, the View will change into the physical product. The MVC allows us to focus on developing the essential code that we need in the Model and Controller, and have as little of what we need in the View. We can simply then replace the digital version of the View with the physical version of the View, while keeping all our progress in the Model and Controller. </p>
+<p>With regards to testing, the MVC architecture allows us to test two different types of Controller functions: the backend functions and the frontend functions. The backend functions are those that will strictly work in the background, for eg. converting a text file into braille format. Since all of these functions will be in the Controller portion, we can easily organize and create unit tests for them. The frontend functions are those that interact with the View. Our plan is to create functions in the View that are universal to both the digital and physical versions, for eg. nextPage(). In the digital version, this could manifest as a button that says next. In the physical version, this could be a button with braille dots on them. Either way, when the function is called, it will call a Controller function. We can then see if the Controller is doing what it’s supposed to do, such as going to the next page of text/braille. The limitation to this method is that it would be painstaking to test all scenarios and not as efficient as unit testing, leading to possible bugs. To compensate, we will try to test as many things using unit tests as possible.</p>
+<h4 id="workflow">Workflow</h4>
+<p>For this sprint, we will be working in two smaller teams: frontend and backend. The frontend team is in charge of developing the digital user-interface. The backend team is in charge of developing functions in the Controller that take in .txt files and turn them into braille format. As the backend team develops their functions, they will also shape the Model in whatever ways they deem fit.</p>
+<p>All of our code is on the software repository of the ORBITAL-Assistive-Tech Github organization. The repository has three branches: main, test_ui, and upload. The main branch includes the most up-to-date code that is reflective of the whole sub team's current progress. For this sprint, the main branch includes code that will start up a digital user-interface with buttons that the user can interact with. Buttons are mapped to functions in the Controller that interacts with the Model. The other two branches are for developing new features. The frontend team works on the test_ui branch. This branch includes the most up-to-date version of the digital user-interface. The backend team works on the upload branch. This branch includes the most up-to-date version of the Controller and Model.</p>
+<p>When one of the teams feel like their work is complete, they can submit a pull request in which the sub team lead can accept/reject. The sub team lead is in charge of resolving conflicts in the main branch and making sure that everything integrates properly.</p>
+<h4 id="text-to-braille-conversion-controller">Text to Braille Conversion (controller)</h4>
+<p>Evi, Pepper, and Titi worked on developing the back end systems. We implemented the pybrl library into the project, allowing us to take text strings and convert them into Grade 2 Braille. We built on this by making a system to take input from a txt file, translate it, and store it locally within a dictionary for quick retrieval.</p>
+<p><center><img alt="Photo" src="../../imgs/sprint1/swe1.png" /></center></p>
+<h4 id="storing-data-model">Storing Data (model)</h4>
+<p>The Model was continuously built on throughout the sprint to accommodate the needs of the frontend and backend teams. We did not initially settle on a fixed design for the Model as we believed that there will be new information that’ll have to be stored as the project proceeds. However, we did decide on an overall guiding structure.</p>
+<p>To represent the braille e-reader itself, we created a class named Reader which stores all information concerning the operation of the device, such as its battery percentage, current selected document, etc. The Reader class also has a variable named “documents” which is a list containing all of the books, documents, and articles that have been uploaded to the device.</p>
+<p>To represent each of these books, documents, and articles, we created a class named BrailleFile. The class contains the text of the document, the text’s braille equivalent, the file path of the original file to the program, and a unique ID which is used to select/identify the file. Whenever a file is uploaded, the Controller will parse it and store the parsed information into an instance of the BrailleFile class. The instance is then stored in the Reader’s “documents” variable.</p>
+<p>As the project goes on, we aim to add more variables to these classes as we incorporate new features into the device. Possible ideas we are looking into are ways to represent chapters and book sections in the BrailleFile class, and storing the most recent location the reader was at – so they don’t have to start all over from the beginning of the document. The Reader class could store certain information on preferred settings or some kind of history that the user might find helpful. We hope to keep the model fluid so we can continuously add new features as we rapidly prototype our software.</p>
+<h4 id="frontend-ui-view">Frontend-UI (view)</h4>
+<p>Yunzhu and Anna worked on developing the front-end UI. We displayed the braille codes based on the data in the .json file, and created a series of basic but functioning buttons in the controller. We created forward and backward buttons to traverse through the data, and also different subwindows to allow the user to move through the book that is currently being read, and the main menu where they can select other texts they want to read. </p>
+<p><center><img alt="Photo" src="../../imgs/sprint1/swe2.png" /></center></p>
+<h3 id="key-takeaways">Key Takeaways</h3>
+<ol>
+<li>Unified English Braille</li>
+<li>Prevalence of Braille Ready Format (BRF) Files</li>
+<li>Lack of well-maintained open source Python software </li>
+<li>Unreliable nature of PDF/EPUB conversions</li>
+</ol>
+<h3 id="related-documents">Related Documents</h3>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1KTW-AqIl8hE7oDpX8LTnE_BcdtSr3teZhLTUPoKvzwk/edit#slide=id.g2d926e0b8df_0_0">Sprint Review Slideshow</a></li>
+<li><a href="https://github.com/ORBITAL-Assistive-Tech/software">Github</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.path", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
